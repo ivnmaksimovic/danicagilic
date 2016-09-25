@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  max-width: calc(60rem + (var(--nav-item-padding) * 2));
+  max-width: calc(80rem + (var(--nav-item-padding) * 2));
   margin: 0 auto 1rem;
   padding: 0 1rem;
   line-height: 3rem;

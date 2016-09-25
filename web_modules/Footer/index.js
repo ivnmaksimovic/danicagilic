@@ -1,11 +1,21 @@
-import React, { Component } from "react"
+import React, { Component, PropTypes } from "react"
 import { Link } from "react-router"
 
 import styles from "./index.css"
+import Svg from "react-svg-inline"
+import gitHubSvg from "../icons/iconmonstr-github-1.svg"
 
 export default class Footer extends Component {
 
+  static contextTypes = {
+    metadata: PropTypes.object.isRequired,
+  };
+
   render() {
+    const {
+      pkg,
+    } = this.context.metadata
+
     return (
       <footer className={ styles.footer }>
         <a
@@ -33,6 +43,16 @@ export default class Footer extends Component {
         >
           { "Loading" }
         </Link>
+        { ", " }
+        { pkg.repository &&
+        <a
+          href={ pkg.repository }
+          className={ styles.link }
+        >
+          <Svg svg={ gitHubSvg } />
+          { "GitHub" }
+        </a>
+          }
       </footer>
     )
   }

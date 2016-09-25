@@ -4,7 +4,6 @@ import { Link } from "react-router"
 import styles from "./index.css"
 import Svg from "react-svg-inline"
 import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
-import gitHubSvg from "../icons/iconmonstr-github-1.svg"
 
 export default class Header extends Component {
   
@@ -21,20 +20,34 @@ export default class Header extends Component {
       <header className={ styles.header }>
         <nav className={ styles.nav }>
           <div className={ styles.navPart1 }>
-            <Link
-              className={ styles.link }
-              to="/"
-            >
+            <Link to="/" className={ styles.link } >
               { "About" }
             </Link>
-            <Link
-              className={ styles.link }
-              to="/"
-            >
+            { " | " }
+            <Link to="/" className={ styles.link } >
               { "Contact me" }
             </Link>
           </div>
           <div className={ styles.navPart2 }>
+            <Link to="/logo/" className={ styles.link } >
+              { "Logo" }
+            </Link>
+            { " | " }
+            <Link to="/print/" className={ styles.link } >
+              { "Print" }
+            </Link>
+            { " | " }
+            <Link to="/web/" className={ styles.link } >
+              { "Web" }
+            </Link>
+            { " | " }
+            <Link to="/app/" className={ styles.link } >
+              { "App" }
+            </Link>
+            { " | " }
+            <Link to="/photo/" className={ styles.link } >
+              { "Photo" }
+            </Link>
             { pkg.twitter &&
               <a
                 href={ `https://twitter.com/${pkg.twitter}` }
@@ -42,15 +55,6 @@ export default class Header extends Component {
               >
                 <Svg svg={ twitterSvg } />
                   { "Twitter" }
-              </a>
-            }
-            { pkg.repository &&
-              <a
-                href={ pkg.repository }
-                className={ styles.link }
-              >
-                <Svg svg={ gitHubSvg } />
-                { "GitHub" }
               </a>
             }
           </div>
