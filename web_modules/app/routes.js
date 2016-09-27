@@ -10,6 +10,7 @@ import PageLoading from "../layouts/PageLoading"
 import Homepage from "../layouts/Homepage"
 import Post from "../layouts/Post"
 import ProjectList from "../layouts/ProjectList"
+import Projects from "../pages/Projects"
 
 class PageContainer extends Component {
   render() {
@@ -32,6 +33,7 @@ class PageContainer extends Component {
 
 export default (
   <Route component={ LayoutContainer }>
+    <Route path="/projects/demo/" component={ Projects } />
     <Route path="*" component={ PageContainer } />
   </Route>
 )
