@@ -29,23 +29,23 @@ export default class Header extends Component {
             </Link>
           </div>
           <div className={ styles.navPart2 }>
-            <Link to="/logo/" className={ styles.link } >
+            <Link to="/projects/logo/" className={ styles.link } >
               { "Logo" }
             </Link>
             { " | " }
-            <Link to="/print/" className={ styles.link } >
+            <Link to="/projects/print/" className={ styles.link } >
               { "Print" }
             </Link>
             { " | " }
-            <Link to="/web/" className={ styles.link } >
+            <Link to="/projects/web/" className={ styles.link } >
               { "Web" }
             </Link>
             { " | " }
-            <Link to="/app/" className={ styles.link } >
+            <Link to="/projects/app/" className={ styles.link } >
               { "App" }
             </Link>
             { " | " }
-            <Link to="/photo/" className={ styles.link } >
+            <Link to="/projects/photo/" className={ styles.link } >
               { "Photo" }
             </Link>
             { pkg.twitter &&
