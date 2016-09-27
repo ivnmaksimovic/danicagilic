@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import ProjectThumb from "../ProjectThumb"
 
 const ProjectsList = ({ projects }) => {
   return (
@@ -6,13 +7,13 @@ const ProjectsList = ({ projects }) => {
     {
       projects.length
         ? (
-        <ul>
+        <div>
         {
           projects.map((project) => (
-            <li key={ project.title }>{ project.title }</li>
+            <ProjectThumb key={ project.title } project={ project } />
           ))
           }
-        </ul>
+        </div>
       )
         : "Creating..."
       }
