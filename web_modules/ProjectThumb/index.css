@@ -1,0 +1,18 @@
+.projectThumb {
+  background: #ccc;
+  height: 140px;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.projectThumb span {
+  display: flex;
+  height: 100%;
+}
+
+.projectThumb svg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

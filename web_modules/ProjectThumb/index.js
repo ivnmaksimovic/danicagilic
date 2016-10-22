@@ -1,10 +1,10 @@
 import React, { PropTypes } from "react"
 import Svg from "react-svg-inline"
+import styles from "./index.css"
 
 const ProjectThumb = ({ project }) => {
   return (
-    <div>
-      { project.title }
+    <div className={ styles.projectThumb }>
       <Svg svg={ project.svg } />
     </div>
   )
