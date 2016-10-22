@@ -1,18 +1,59 @@
+:root {
+  --thumbWidth: 200px;
+  --thumbHeight: 140px;
+  --thumbBg: #fff;
+  --borderCrossSize: 20px;
+  --borderCrossWidth: 1px;
+}
+
 .projectThumb {
-  background: #ccc;
-  height: 140px;
-  width: 200px;
+  position: relative;
   padding: 20px;
-  border: 1px solid black;
+  height: var(--thumbHeight);
+  width: var(--thumbWidth);
 }
 
 .projectThumb span {
   display: flex;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .projectThumb svg {
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+.crossBorder {
+  background: var(--thumbBg);
+  border: var(--borderCrossWidth) solid black;
+  border-bottom: none;
+}
+
+.crossBorder:last-child {
+  border-bottom: var(--borderCrossWidth) solid black;
+}
+
+.crossBorder::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: var(--thumbBg);
+  left: var(--borderCrossSize);
+  top: -var(--borderCrossWidth);
+  width: calc(100% - var(--borderCrossSize) * 2);
+  height: calc(100% + var(--borderCrossWidth) * 2);
+}
+
+.crossBorder::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: var(--thumbBg);
+  top: var(--borderCrossSize);
+  left: -var(--borderCrossWidth);
+  height: calc(100% - var(--borderCrossSize) * 2);
+  width: calc(100% + var(--borderCrossWidth) * 2);
 }
