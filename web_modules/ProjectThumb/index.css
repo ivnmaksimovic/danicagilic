@@ -28,7 +28,9 @@
 
 .crossBorder {
   background: var(--thumbBg);
-  border: var(--borderCrossWidth) solid black;
+  border-top: var(--borderCrossWidth) solid black;
+  border-right: var(--borderCrossWidth) solid black;
+  border-left: var(--borderCrossWidth) solid black;
   border-bottom: none;
 }
 
