@@ -14,6 +14,10 @@
   width: var(--thumbWidth);
 }
 
+.projectThumb:hover {
+  background: #000;
+}
+
 .projectThumb span {
   display: flex;
   height: 100%;

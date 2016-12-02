@@ -4,9 +4,9 @@ import styles from "./index.css"
 
 const ProjectThumb = ({ project }) => {
   return (
-    <div className={ styles.projectThumb + " " + styles.crossBorder }>
+    <a href="#" className={ styles.projectThumb + " " + styles.crossBorder }>
       <Svg svg={ project.svg } />
-    </div>
+    </a>
   )
 }
 
