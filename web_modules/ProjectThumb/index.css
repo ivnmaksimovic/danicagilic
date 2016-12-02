@@ -9,6 +9,7 @@
 .projectThumb {
   position: relative;
   padding: 20px;
+  margin: -calc(--var(--borderCrossWidth) / 2);
   height: var(--thumbHeight);
   width: var(--thumbWidth);
 }
@@ -31,7 +32,7 @@
   border-top: var(--borderCrossWidth) solid black;
   border-right: var(--borderCrossWidth) solid black;
   border-left: var(--borderCrossWidth) solid black;
-  border-bottom: none;
+  border-bottom: var(--borderCrossWidth) solid black;
 }
 
 .crossBorder:last-child {
