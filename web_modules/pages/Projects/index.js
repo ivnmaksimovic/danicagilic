@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import ProjectsList from "../../ProjectsList"
+import styles from "./index.css"
 
 // temp data
 import sandboxSvg from "../../../content/logo/sandbox.min.svg"
@@ -110,8 +111,7 @@ export default class Projects extends Component {
     ]
 
     return (
-      <div>
-        <h1>{ "Projects" }</h1>
+      <div className={ styles.projects }>
         <ProjectsList projects={ projects } />
       </div>
     )

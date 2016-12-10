@@ -8,30 +8,18 @@
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
   max-width: calc(80rem + (var(--nav-item-padding) * 2));
-  margin: 0 auto 1rem;
-  padding: 0 1rem;
-  line-height: 3rem;
 }
 
 .navPart1,
 .navPart2 {
-  display: flex;
-  flex-direction: row;
+  color: inherit;
 }
 
 .link {
-  display: flex;
-  align-items: center;
-
-  padding: 0 var(--nav-item-padding);
-
-  color: inherit;
   text-decoration: none;
+  font-size: 10px;
+  color: #fff;
 }
 
 .link svg {
