@@ -33,7 +33,7 @@ class PageContainer extends Component {
 
 export default (
   <Route component={ LayoutContainer }>
-    <Route path="/projects/demo/" component={ Projects } />
+    <Route path="/projects/logo/" component={ Projects } />
     <Route path="*" component={ PageContainer } />
   </Route>
 )
