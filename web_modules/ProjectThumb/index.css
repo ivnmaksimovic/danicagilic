@@ -1,5 +1,5 @@
 :root {
-  --thumbWidth: 200px;
+  --thumbWidth: 100%;
   --thumbHeight: 140px;
   --thumbBg: #fff;
   --borderCrossSize: 20px;
@@ -27,7 +27,6 @@
 
 .projectThumb svg {
   width: 100%;
-  display: flex;
   align-items: center;
 }
 
