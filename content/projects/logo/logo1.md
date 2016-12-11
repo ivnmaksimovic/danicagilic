@@ -1,14 +1,8 @@
 ---
 title: Logo1
-type: Logo
 layout: Project
+date: 2014-05-24
+type: website
 ---
 
 Logo1 is a...
-
-
-Built with
-<a href="https://facebook.github.io/react/">
-  <img alt="" src="../assets/react.svg" width="16" height="16" />
-  React
-</a>.

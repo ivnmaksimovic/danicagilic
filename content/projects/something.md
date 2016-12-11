@@ -1,14 +1,8 @@
 ---
 title: Something
-type: Logo
 layout: Project
+date: 2014-04-16
+type: logo
 ---
 
 Something:
-
-
-Built with
-<a href="https://facebook.github.io/react/">
-  <img alt="" src="../assets/react.svg" width="16" height="16" />
-  React
-</a>.
