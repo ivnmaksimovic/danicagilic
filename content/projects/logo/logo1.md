@@ -1,10 +1,10 @@
 ---
-title: Something
+title: Logo1
 type: Logo
 layout: Project
 ---
 
-Something:
+Logo1 is a...
 
 
 Built with

@@ -9,7 +9,8 @@ import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 import Homepage from "../layouts/Homepage"
 import Post from "../layouts/Post"
-import ProjectList from "../layouts/ProjectList"
+import Project from "../layouts/Project"
+import ProjectDetails from "../layouts/ProjectDetails"
 import Projects from "../pages/Projects"
 
 class PageContainer extends Component {
@@ -24,7 +25,8 @@ class PageContainer extends Component {
           PageLoading,
           Homepage,
           Post,
-          ProjectList,
+          Project,
+          ProjectDetails,
         } }
       />
     )

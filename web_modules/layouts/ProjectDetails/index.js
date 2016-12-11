@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import invariant from "invariant"
 import { BodyContainer, joinUri } from "phenomic"
 
-class Page extends Component {
+class ProjectDetails extends Component {
   render() {
     const { props, context } = this
 
@@ -51,7 +51,10 @@ class Page extends Component {
 
         {
           head.title &&
-          <h1>{ head.title }</h1>
+          <h1>
+            { head.title }
+            <strong>{ "Type: " + head.type }</strong>
+          </h1>
         }
         { header }
         <BodyContainer>{ body }</BodyContainer>
@@ -62,7 +65,7 @@ class Page extends Component {
   }
 }
 
-Page.propTypes = {
+ProjectDetails.propTypes = {
   children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
   __filename: PropTypes.string.isRequired,
   __url: PropTypes.string.isRequired,
@@ -72,8 +75,8 @@ Page.propTypes = {
   footer: PropTypes.element,
 }
 
-Page.contextTypes = {
+ProjectDetails.contextTypes = {
   metadata: PropTypes.object.isRequired,
 }
 
-export default Page
+export default ProjectDetails
