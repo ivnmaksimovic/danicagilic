@@ -1,8 +1,8 @@
 ---
-title: Something
+title: Some website project
 layout: Project
 date: 2014-04-16
-type: logo
+type: web
 ---
 
-Something:
+Some logo2 project description...:

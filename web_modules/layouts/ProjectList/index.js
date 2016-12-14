@@ -5,14 +5,14 @@ import PagesList from "../../PagesList"
 
 const numberOfLatestPosts = 6
 
-export default class Homepage extends Component {
+class ProjectList extends Component {
   static contextTypes = {
     collection: PropTypes.array.isRequired,
   }
 
   render() {
     const projects = enhanceCollection(this.context.collection, {
-      filter: { layout: "Project", type: "logo" },
+      filter: { layout: "Project", type: this.props.params.type },
       sort: "date",
       reverse: true,
     })
@@ -26,3 +26,9 @@ export default class Homepage extends Component {
     )
   }
 }
+
+ProjectList.propTypes = {
+  params: PropTypes.object.isRequired,
+}
+
+export default ProjectList
