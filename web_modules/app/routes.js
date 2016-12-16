@@ -11,6 +11,7 @@ import Post from "../layouts/Post"
 import Project from "../layouts/Project"
 import ProjectDetails from "../layouts/ProjectDetails"
 import ProjectList from "../layouts/ProjectList"
+import Homepage from "../layouts/Homepage"
 import Projects from "../pages/Projects"
 
 class PageContainer extends Component {
@@ -24,6 +25,7 @@ class PageContainer extends Component {
           PageError,
           PageLoading,
           Post,
+          Homepage,
           Project,
           ProjectDetails,
           ProjectList,
@@ -37,6 +39,7 @@ export default (
   <Route component={ LayoutContainer }>
     <Route path="/projects/logolist/" component={ Projects } />
     <Route path="/projects/:type" component={ ProjectList } />
+    <Route path="/projects/" component={ PageContainer } />
     <Route path="*" component={ PageContainer } />
   </Route>
 )
