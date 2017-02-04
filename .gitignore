@@ -4,6 +4,3 @@ node_modules
 
 # phenomic build
 dist
-
-# editor
-.idea

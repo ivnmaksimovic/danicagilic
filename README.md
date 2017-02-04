@@ -1,9 +1,4 @@
-# Danica Gilic presentation
-
-
-# Built with:
-
-[Phenomic](https://github.com/MoOx/phenomic) boilerplate
+# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
 
 ## Install dependencies
 
