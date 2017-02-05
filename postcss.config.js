@@ -1,5 +1,9 @@
 module.exports = (config) => [
-    require("stylelint")(),
+    require("stylelint")({
+      "rules": {
+        "declaration-block-no-ignored-properties": null
+      }
+    }),
     require("postcss-cssnext")({
       browsers: "last 2 versions",
       features: {
@@ -20,7 +24,7 @@ module.exports = (config) => [
     }),
     require("postcss-reporter")(),
     ...!config.production ? [
-      // require("postcss-browser-reporter")(),
+      require("postcss-browser-reporter")(),
     ] : [],
   ]
-// 
+//
