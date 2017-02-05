@@ -1,8 +1,8 @@
 ---
 title: Sandbox
-layout: Project
 date: 2014-05-24
-type: logo
+online: true
+tags: logo, web
 slug: sandbox
 svg: ../../../content/assets/logo/sandbox.min.svg
 ---

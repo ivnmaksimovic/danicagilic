@@ -1,8 +1,8 @@
 ---
-title: iBar logo project2
-layout: Project
+title: iBar logo
 date: 2016-01-22
-type: logo
+online: true
+tags: logo, print
 slug: i-bar
 svg: ../../../content/assets/logo/i-bar.min.svg
 ---

@@ -1,8 +1,8 @@
 ---
-title: Crosscut website project
-layout: Project
+title: Crosscut website and logo
 date: 2014-04-16
-type: web
+online: true
+tags: logo, web
 slug: crosscut
 svg: ../../../content/assets/logo/crosscut.min.svg
 ---

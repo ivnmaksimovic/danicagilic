@@ -8,7 +8,7 @@ const defaultNumberOfPosts = 6
 
 const ProjectList = (props, { collection }) => {
   const projects = enhanceCollection(collection, {
-    filter: { layout: "Project" },
+    filter: ({ online }) => online === true,
     sort: "date",
     reverse: true,
   })
@@ -26,7 +26,7 @@ const ProjectList = (props, { collection }) => {
 
           return (
             <ProjectThumb key={ project.title } project={ project } >
-              <Svg svg={ project.svg } />
+              { project.svg && <Svg svg={ project.svg } /> }
             </ProjectThumb>
           )
         })
