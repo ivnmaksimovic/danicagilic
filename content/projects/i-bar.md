@@ -7,4 +7,4 @@ slug: i-bar
 svg: ../../../content/assets/logo/i-bar.min.svg
 ---
 
-Some logo project2 description:
+Logo for iBar in Kraljevo and some printed material.

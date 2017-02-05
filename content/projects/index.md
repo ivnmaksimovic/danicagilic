@@ -1,6 +1,7 @@
 ---
 title: Projects
 layout: ProjectList
+numberOfPosts: 20
 ---
 
 Projects:

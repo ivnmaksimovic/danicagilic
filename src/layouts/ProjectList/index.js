@@ -12,7 +12,7 @@ const ProjectList = (props, { collection }) => {
     sort: "date",
     reverse: true,
   })
-  .slice(0, props.numberOfPosts || defaultNumberOfPosts)
+  .slice(0, 30 || defaultNumberOfPosts)
 
   return (
     <div className={ styles.projectList }>
