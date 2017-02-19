@@ -24,7 +24,7 @@ const PageContainer = (props) => (
 
 export default (
   <Route component={ AppContainer }>
-    <Route path="/projects/filter/:type" component={ PageContainer } />
+    <Route path="/projects/filter/:tag" component={ ProjectList } />
     <Route path="*" component={ PageContainer } />
   </Route>
 )

@@ -7,8 +7,15 @@ import Svg from "react-svg-inline"
 const defaultNumberOfPosts = 6
 
 const ProjectList = (props, { collection }) => {
+  const { tag } = props.params
+
   const projects = enhanceCollection(collection, {
-    filter: ({ online }) => online === true,
+    filter:(item) => {
+      /* eslint-disable no-use-before-define */
+      // console.log(item.tags, tag, props.params)
+      /* eslint-enable no-use-before-define */
+      return item.online === true && (item.tags && item.tags.indexOf(tag) > -1)
+    },
     sort: "date",
     reverse: true,
   })
@@ -37,6 +44,7 @@ const ProjectList = (props, { collection }) => {
 
 ProjectList.propTypes = {
   numberOfPosts: PropTypes.number,
+  params: PropTypes.object,
 }
 
 ProjectList.contextTypes = {

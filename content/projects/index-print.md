@@ -2,7 +2,7 @@
 title: Projects
 layout: ProjectList
 numberOfPosts: 20
-filterTag: all
+filterTag: print
 ---
 
 Projects:
