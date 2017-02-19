@@ -1,6 +1,6 @@
 :root {
   --thumbWidth: 100%;
-  --thumbHeight: 140px;
+  --thumbHeight: 220px;
   --thumbBg: #fff;
   --borderCrossSize: 20px;
   --borderCrossWidth: 1px;
@@ -8,7 +8,7 @@
 
 .projectThumb {
   position: relative;
-  padding: 20px;
+  padding: 20px 60px;
   margin: -calc(--var(--borderCrossWidth) / 2);
   height: var(--thumbHeight);
   width: var(--thumbWidth); /* remove to have multiple columns */

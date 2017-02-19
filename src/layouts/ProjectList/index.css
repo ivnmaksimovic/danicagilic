@@ -3,4 +3,5 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin: 0 16px;
 }
