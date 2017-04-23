@@ -4,7 +4,7 @@ import { Link } from "react-router"
 
 const ProjectThumb = ({ project, children }) => {
   return (
-    <Link to={ project.slug } className={ styles.projectThumb + " " + styles.crossBorder } >
+    <Link to={ "/projects/" + project.slug } className={ styles.projectThumb + " " + styles.crossBorder } >
       { children }
     </Link>
   )
